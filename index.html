@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPM Sync - Musique Adaptative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo-nav">🎵 BPM Sync</div>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#test">Tester</a></li>
+                </ul>
+                <div class="nav-toggle">☰</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="hero-content">
+            <div class="logo-hero">BPM Sync</div>
+            <h1>Votre Musique<br><span class="gradient-text">S'adapte à Vous</span></h1>
+            <p class="tagline">Synchronisation intelligente entre vos données biométriques et votre playlist</p>
+            <a href="#about" class="cta-button">
+                <span>Découvrir</span>
+                <div class="button-glow"></div>
+            </a>
+        </div>
+        <div class="floating-icons">
+            <div class="icon">💓</div>
+            <div class="icon">🎧</div>
+            <div class="icon">⚡</div>
+            <div class="icon">🌟</div>
+            <div class="icon">📊</div>
+            <div class="icon">💧</div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="visualizer" id="visualizer">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>La Musique qui s'adapte à Vous</h2>
+                    <p>BPM Sync crée une <span class="highlight">connexion intelligente</span> entre votre corps et votre playlist.</p>
+                    <p>Notre technologie analyse votre rythme cardiaque, température, transpiration et environnement pour composer la <span class="highlight">bande sonore parfaite</span> de chaque instant.</p>
+                    <div class="features-quick">
+                        <div class="quick-feature">
+                            <span class="qf-icon">⚡</span>
+                            <span>Adaptation en temps réel</span>
+                        </div>
+                        <div class="quick-feature">
+                            <span class="qf-icon">🧠</span>
+                            <span>Intelligence artificielle</span>
+                        </div>
+                        <div class="quick-feature">
+                            <span class="qf-icon">🎯</span>
+                            <span>Précision biométrique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités Clés</h2>
+            <p class="section-subtitle">Une expérience musicale sur mesure</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💓</div>
+                    <h3>Sync Biométrique</h3>
+                    <p>Analyse continue de votre fréquence cardiaque et température pour un ajustement musical instantané.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>IA Musicale</h3>
+                    <p>Algorithme intelligent qui sélectionne le tempo, genre et intensité parfaits selon votre état.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌅</div>
+                    <h3>Contexte 360°</h3>
+                    <p>Intégration de la luminosité et de l'heure pour une ambiance musicale idéale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics Pro</h3>
+                    <p>Statistiques détaillées et recommandations pour optimiser vos performances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="test" class="test-section">
+        <div class="container">
+            <h2 class="section-title">Testez BPM Sync</h2>
+            <p class="section-subtitle">Ajustez vos paramètres et découvrez votre style musical idéal</p>
+            <div class="test-interface">
+
+                <div class="controls-panel">
+                    <div class="panel-header">
+                        <h3>🎛️ Vos Données Biométriques</h3>
+                        <p>Simulez votre état actuel</p>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="genre-select">🎵 Genre musical</label>
+                        <select id="genre-select" class="genre-select">
+                            <option value="">-- Choisir un genre --</option>
+                            <option value="EDM">EDM</option>
+                            <option value="Hip-Hop">Hip-Hop</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Lofi">Lofi</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Classical">Classique</option>
+                            <option value="Rap français">Rap français</option>
+                            <option value="Metal">Metal</option>
+                            <option value="R&B">R&B</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="bpm">💓 Rythme Cardiaque</label>
+                        <div class="slider-container">
+                            <input type="range" id="bpm" class="slider" min="60" max="180" value="80">
+                            <span id="bpm-value" class="value">80 BPM</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="temperature">🌡️ Température</label>
+                        <div class="slider-container">
+                            <input type="range" id="temperature" class="slider" min="36" max="40" step="0.1" value="37">
+                            <span id="temperature-value" class="value">37.0°C</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="sweat">💧 Transpiration</label>
+                        <div class="slider-container">
+                            <input type="range" id="sweat" class="slider" min="0" max="100" value="30">
+                            <span id="sweat-value" class="value">30%</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="light">☀️ Luminosité</label>
+                        <div class="slider-container">
+                            <input type="range" id="light" class="slider" min="0" max="100" value="60">
+                            <span id="light-value" class="value">60%</span>
+                        </div>
+                    </div>
+
+                    <button class="generate-button" onclick="generatePlaylist()">
+                        Analyser & Générer 🎵
+                    </button>
+                </div>
+
+                <div class="result-panel">
+                    <div class="mood-display">
+                        <div class="mood-icon" id="mood-icon">🎧</div>
+                        <h3 id="mood-title">En attente d'analyse...</h3>
+                        <p id="mood-description">Ajustez les curseurs et cliquez sur analyser</p>
+                    </div>
+
+                    <div class="music-result" id="music-result">
+                        <div id="youtube-results" class="youtube-results" style="display: none;">
+                            <h4>🎥 Vidéos recommandées</h4>
+                            <div id="youtube-videos" class="youtube-videos"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-footer">🎵 BPM Sync</div>
+            <p>La musique qui s'adapte à votre rythme</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Discord</a>
+            </div>
+            <p class="copyright">&copy; 2026 BPM Sync. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
